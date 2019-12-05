@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://alphaidea.github.io</id>
     <title>Gridea</title>
-    <updated>2019-12-05T09:16:38.725Z</updated>
+    <updated>2019-12-05T09:56:25.747Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://alphaidea.github.io"/>
+    <link rel="self" href="https://alphaidea.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://alphaidea.github.io/images/avatar.png</logo>
+    <icon>https://alphaidea.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[Git 常用命令]]></title>
+        <id>https://alphaidea.github.io/post/git-frequent-command</id>
+        <link href="https://alphaidea.github.io/post/git-frequent-command">
+        </link>
+        <updated>2019-12-05T09:31:55.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="git-常用命令">Git 常用命令</h1>
+<h2 id="拉取远端指定分支">拉取远端指定分支</h2>
+<pre><code class="language-bash">git clone -b [branch name] [git url] [local folder name]
+</code></pre>
+<h2 id="分支">分支</h2>
+<h3 id="下载远程仓库的所有变动">下载远程仓库的所有变动</h3>
+<pre><code class="language-bash">git fetch
+</code></pre>
+<h3 id="列出所有远程分支">列出所有远程分支</h3>
+<pre><code class="language-bash">git branch -r
+</code></pre>
+<h3 id="拉取-xx-分支并合并到本地分支">拉取 xx 分支并合并到本地分支</h3>
+<pre><code class="language-bash">git pull origin [branch name]
+</code></pre>
+<h3 id="切换到指定分支并更新工作区">切换到指定分支，并更新工作区</h3>
+<pre><code class="language-bash">git checkout [branch name]
+</code></pre>
+<h3 id="切换到上一个分支">切换到上一个分支</h3>
+<pre><code class="language-bash">git checkout -
+</code></pre>
+<h2 id="查看信息">查看信息</h2>
+<h3 id="显示有变更的文件">显示有变更的文件</h3>
+<pre><code class="language-bash">git status
+</code></pre>
+<h3 id="显示暂存区和工作区的差异">显示暂存区和工作区的差异</h3>
+<pre><code class="language-bash">git diff [filename]
+</code></pre>
+<h2 id="撤销">撤销</h2>
+<h3 id="恢复暂存区的指定文件到工作区">恢复暂存区的指定文件到工作区</h3>
+<pre><code class="language-bash">git checkout [filename]
+</code></pre>
+<h3 id="恢复暂存区的所有文件到工作区">恢复暂存区的所有文件到工作区</h3>
+<pre><code class="language-bash">git checkout .
+</code></pre>
+]]></content>
+    </entry>
 </feed>

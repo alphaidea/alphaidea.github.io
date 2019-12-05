@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Git 常用命令 | Gridea</title>
+<meta name="description" content="温故而知新" />
+<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1575539743087">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://alphaidea.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://alphaidea.github.io">
+  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1575539743087" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Git 常用命令
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-12-05
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://alphaidea.github.io/tag/kbr3QMZde" class="post-tag">
+                  # Git
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="git-常用命令">Git 常用命令</h1>
+<h2 id="拉取远端指定分支">拉取远端指定分支</h2>
+<pre><code class="language-bash">git clone -b [branch name] [git url] [local folder name]
+</code></pre>
+<h2 id="分支">分支</h2>
+<h3 id="下载远程仓库的所有变动">下载远程仓库的所有变动</h3>
+<pre><code class="language-bash">git fetch
+</code></pre>
+<h3 id="列出所有远程分支">列出所有远程分支</h3>
+<pre><code class="language-bash">git branch -r
+</code></pre>
+<h3 id="拉取-xx-分支并合并到本地分支">拉取 xx 分支并合并到本地分支</h3>
+<pre><code class="language-bash">git pull origin [branch name]
+</code></pre>
+<h3 id="切换到指定分支并更新工作区">切换到指定分支，并更新工作区</h3>
+<pre><code class="language-bash">git checkout [branch name]
+</code></pre>
+<h3 id="切换到上一个分支">切换到上一个分支</h3>
+<pre><code class="language-bash">git checkout -
+</code></pre>
+<h2 id="查看信息">查看信息</h2>
+<h3 id="显示有变更的文件">显示有变更的文件</h3>
+<pre><code class="language-bash">git status
+</code></pre>
+<h3 id="显示暂存区和工作区的差异">显示暂存区和工作区的差异</h3>
+<pre><code class="language-bash">git diff [filename]
+</code></pre>
+<h2 id="撤销">撤销</h2>
+<h3 id="恢复暂存区的指定文件到工作区">恢复暂存区的指定文件到工作区</h3>
+<pre><code class="language-bash">git checkout [filename]
+</code></pre>
+<h3 id="恢复暂存区的所有文件到工作区">恢复暂存区的所有文件到工作区</h3>
+<pre><code class="language-bash">git checkout .
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4">Git 常用命令</a>
+<ul>
+<li><a href="#%E6%8B%89%E5%8F%96%E8%BF%9C%E7%AB%AF%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF">拉取远端指定分支</a></li>
+<li><a href="#%E5%88%86%E6%94%AF">分支</a>
+<ul>
+<li><a href="#%E4%B8%8B%E8%BD%BD%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E6%89%80%E6%9C%89%E5%8F%98%E5%8A%A8">下载远程仓库的所有变动</a></li>
+<li><a href="#%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF">列出所有远程分支</a></li>
+<li><a href="#%E6%8B%89%E5%8F%96-xx-%E5%88%86%E6%94%AF%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF">拉取 xx 分支并合并到本地分支</a></li>
+<li><a href="#%E5%88%87%E6%8D%A2%E5%88%B0%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF%E5%B9%B6%E6%9B%B4%E6%96%B0%E5%B7%A5%E4%BD%9C%E5%8C%BA">切换到指定分支，并更新工作区</a></li>
+<li><a href="#%E5%88%87%E6%8D%A2%E5%88%B0%E4%B8%8A%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF">切换到上一个分支</a></li>
+</ul>
+</li>
+<li><a href="#%E6%9F%A5%E7%9C%8B%E4%BF%A1%E6%81%AF">查看信息</a>
+<ul>
+<li><a href="#%E6%98%BE%E7%A4%BA%E6%9C%89%E5%8F%98%E6%9B%B4%E7%9A%84%E6%96%87%E4%BB%B6">显示有变更的文件</a></li>
+<li><a href="#%E6%98%BE%E7%A4%BA%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8C%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7%9A%84%E5%B7%AE%E5%BC%82">显示暂存区和工作区的差异</a></li>
+</ul>
+</li>
+<li><a href="#%E6%92%A4%E9%94%80">撤销</a>
+<ul>
+<li><a href="#%E6%81%A2%E5%A4%8D%E6%9A%82%E5%AD%98%E5%8C%BA%E7%9A%84%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%88%B0%E5%B7%A5%E4%BD%9C%E5%8C%BA">恢复暂存区的指定文件到工作区</a></li>
+<li><a href="#%E6%81%A2%E5%A4%8D%E6%9A%82%E5%AD%98%E5%8C%BA%E7%9A%84%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%E5%88%B0%E5%B7%A5%E4%BD%9C%E5%8C%BA">恢复暂存区的所有文件到工作区</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://alphaidea.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>
