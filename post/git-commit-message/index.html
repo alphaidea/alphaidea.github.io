@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>文詣不文藝</title>
+<title>Git Commit Message | 文詣不文藝</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1576941397679">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -74,25 +74,24 @@
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://alphaidea.github.io/post/git-commit-message">
-        <h2 class="post-title">Git Commit Message</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-12-21
-        </span>
-        <span>
-          4 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        <h1 id="优雅地提交-git-commit-message">优雅地提交 Git Commit Message</h1>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Git Commit Message
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-12-21
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="优雅地提交-git-commit-message">优雅地提交 Git Commit Message</h1>
 <h2 id="why">Why</h2>
 <p>如果在版本回退的时候看到一大段完全不知所云的 Commit，大概会是一种非常糟心的体验。而规范的提交后，只需要看标识符就可以明白提交的目的。</p>
 <h3 id="方便浏览">方便浏览</h3>
@@ -182,65 +181,75 @@ Co-authored-by: Full Name <a href="mailto:email@example.com">email@example.com</
 <p>v2.0.0-beta.2</p>
 <p>版本正式发布前需要生成 changelog 文档，然后再发布上线。</p>
 <hr>
+<!-- more -->
+<p><em>规范没有绝对的好坏，只要适合团队和个人就行</em></p>
+<p><em>好的习惯尽早养成，受益终身</em></p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commits" title="angular">AngularJS Commits</a></p>
+<p><a href="https://www.conventionalcommits.org" title="Conventional Commits">Conventional Commits</a></p>
+<p><a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" title="Tim Pope">A Note About Git Commit Messages</a></p>
+<p><a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html" title="阮一峰老师">Commit message 和 Change log 编写指南</a></p>
+<p><a href="https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message" title="thoughtbot">5 Useful Tips For A Better Commit Message</a></p>
 
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://alphaidea.github.io/post/javascript-shu-zi-qu-zheng">
-        <h2 class="post-title">JavaScript 数字取整</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-12-21
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://alphaidea.github.io/tag/kCfMIgto_" class="post-tag">
-            # JavaScript
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="https://alphaidea.github.io/post/git-frequent-command">
-        <h2 class="post-title">Git 常用命令</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-12-05
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://alphaidea.github.io/tag/kbr3QMZde" class="post-tag">
-            # Git
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-</div>
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E4%BC%98%E9%9B%85%E5%9C%B0%E6%8F%90%E4%BA%A4-git-commit-message">优雅地提交 Git Commit Message</a>
+<ul>
+<li><a href="#why">Why</a>
+<ul>
+<li><a href="#%E6%96%B9%E4%BE%BF%E6%B5%8F%E8%A7%88">方便浏览</a></li>
+<li><a href="#%E4%BE%BF%E4%BA%8E%E6%9F%A5%E6%89%BE">便于查找</a></li>
+</ul>
+</li>
+<li><a href="#git-commit-%E8%A7%84%E8%8C%83">Git Commit 规范</a>
+<ul>
+<li><a href="#header">Header</a>
+<ul>
+<li><a href="#type-%E5%8F%AA%E5%85%81%E8%AE%B8%E4%BD%BF%E7%94%A8%E4%B8%8B%E9%9D%A2-7-%E4%B8%AA%E6%A0%87%E8%AF%86">type 只允许使用下面 7 个标识</a></li>
+</ul>
+</li>
+<li><a href="#body">Body</a></li>
+<li><a href="#footer">Footer</a></li>
+<li><a href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5-revert">特殊情况 Revert</a></li>
+<li><a href="#%E5%A5%BD%E7%9A%84%E6%A0%BC%E5%BC%8F">好的格式</a></li>
+</ul>
+</li>
+<li><a href="#git-%E5%88%86%E6%94%AF%E4%B8%8E%E7%89%88%E6%9C%AC%E5%8F%91%E5%B8%83%E8%A7%84%E8%8C%83">Git 分支与版本发布规范</a>
+<ul>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%88%99">基本原则</a></li>
+<li><a href="#%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91">日常开发</a></li>
+<li><a href="#%E5%88%86%E6%94%AF%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83">分支命名规范</a></li>
+<li><a href="#tag">Tag</a>
+<ul>
+<li><a href="#tag-%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83">Tag 命名规范</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#reference">Reference</a></li>
+</ul>
+</li>
+</ul>
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
+              </div>
+            </div>
+          </article>
+        </div>
 
-    
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://alphaidea.github.io/post/javascript-shu-zi-qu-zheng">
+              <h3 class="post-title">
+                JavaScript 数字取整
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
         <div class="site-footer">
   從來如此，便对吗？ | 
   <a class="rss" href="https://alphaidea.github.io/atom.xml" target="_blank">RSS</a>
