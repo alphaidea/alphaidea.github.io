@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alphaidea.github.io</id>
     <title>文詣不文藝</title>
-    <updated>2019-12-22T02:06:09.219Z</updated>
+    <updated>2019-12-22T15:05:21.905Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alphaidea.github.io"/>
     <link rel="self" href="https://alphaidea.github.io/atom.xml"/>
@@ -57,7 +57,7 @@ git log HEAD --grep feat
 <li>refactor：重构（既不是新增功能，也不是修改 bug 的- 代码变动）</li>
 <li>test：增加测试（单元测试、集成测试）</li>
 <li>chore：构建过程或辅助工具的变动</li>
-<li><em><strong>revert：回滚到某一个版本</strong></em></li>
+<li><a href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5-revert"><em><strong>revert：回滚到某一个版本</strong></em></a></li>
 </ul>
 <h3 id="body">Body</h3>
 <p>Body 是对本次 commit 的详细描述，可分成多行。应说明代码变动的动机，以及与以前功能的对比。</p>
