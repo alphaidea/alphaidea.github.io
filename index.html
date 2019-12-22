@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>文詣不文藝</title>
 <meta name="description" content="温故而知新" />
-<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1576980137178">
+<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1576980359086">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alphaidea.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://alphaidea.github.io">
-  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1576980137178" alt="">
+  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1576980359086" alt="">
   </a>
   <h1 class="site-title">
     文詣不文藝
@@ -89,100 +89,14 @@
           4 min read
         </span>
         
+          <a href="https://alphaidea.github.io/tag/kbr3QMZde" class="post-tag">
+            # Git
+          </a>
+        
       </div>
       
       <div class="post-abstract">
-        <h1 id="优雅地提交-git-commit-message">优雅地提交 Git Commit Message</h1>
-<h2 id="why">Why</h2>
-<p>如果在版本回退的时候看到一大段完全不知所云的 Commit，大概会是一种非常糟心的体验。而规范的提交后，只需要看标识符就可以明白提交的目的。</p>
-<h3 id="方便浏览">方便浏览</h3>
-<p>提供更多的信息，方便排查与回退</p>
-<pre><code class="language-bash">git log HEAD --pretty=format:%s
-</code></pre>
-<h3 id="便于查找">便于查找</h3>
-<p>过滤关键字，迅速定位</p>
-<pre><code class="language-bash"># 查找新增功能
-git log HEAD --grep feat
-</code></pre>
-<h2 id="git-commit-规范">Git Commit 规范</h2>
-<pre><code class="language-git">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
-&lt;BLANK LINE&gt;
-&lt;body&gt;
-&lt;BLANK LINE&gt;
-&lt;footer&gt;
-</code></pre>
-<h3 id="header">Header</h3>
-<p>Header 仅有一行，包含三个字段</p>
-<ul>
-<li>type（必需）：用于说明 commit 的类别</li>
-<li>scope（可选）：用于说明 commit 影响的范围，比如数据层、控制层、视图层等，视项目不同而不同</li>
-<li>subject（必需）：commit 目的的简短描述
-<ul>
-<li>首字母不大写</li>
-<li>末尾不要标点</li>
-<li>以动词开头，使用第一人称现在时，比如 change，而不是 changed 或 changes</li>
-</ul>
-</li>
-</ul>
-<h4 id="type-只允许使用下面-7-个标识">type 只允许使用下面 7 个标识</h4>
-<ul>
-<li>feat：新功能（feature）</li>
-<li>fix：修复 bug</li>
-<li>docs：文档（documentation）</li>
-<li>style： 格式（不影响代码逻辑）</li>
-<li>refactor：重构（既不是新增功能，也不是修改 bug 的- 代码变动）</li>
-<li>test：增加测试（单元测试、集成测试）</li>
-<li>chore：构建过程或辅助工具的变动</li>
-<li><em><strong>revert：回滚到某一个版本</strong></em></li>
-</ul>
-<h3 id="body">Body</h3>
-<p>Body 是对本次 commit 的详细描述，可分成多行。应说明代码变动的动机，以及与以前功能的对比。</p>
-<h3 id="footer">Footer</h3>
-<p>该部分用于两种情况：</p>
-<ul>
-<li>不兼容的变动：与上一个版本不兼容，则 Footer 部分以 BREAKING CHANGE 开头</li>
-<li>关闭 Issue：commit 针对某个 issue，在 Footer 中可以写上 Closes #123</li>
-</ul>
-<h3 id="特殊情况-revert">特殊情况 Revert</h3>
-<p>有一种特殊情况，如果当前 commit 用于撤销以前的 commit：</p>
-<p>必须以 revert: 开头，后面跟着被撤销 Commit 的 Header<br>
-Body 部分的格式是固定的，必须写成 This reverts commit &lt;hash&gt;.<br>
-hash 为被撤销 commit 的 SHA 标识符</p>
-<h3 id="好的格式">好的格式</h3>
-<blockquote>
-<p>50-character subject line</p>
-<p>72-character wrapped longer description. This should answer:</p>
-<ul>
-<li>Why was this change necessary?</li>
-<li>How does it address the problem?</li>
-<li>Are there any side effects?</li>
-</ul>
-<p>Include a link to the ticket, if any.</p>
-<p>Add co-authors if you worked on this code with others:</p>
-<p>Co-authored-by: Full Name <a href="mailto:email@example.com">email@example.com</a><br>
-Co-authored-by: Full Name <a href="mailto:email@example.com">email@example.com</a></p>
-</blockquote>
-<h2 id="git-分支与版本发布规范">Git 分支与版本发布规范</h2>
-<h3 id="基本原则">基本原则</h3>
-<p>master 为保护分支，不直接在 master 上进行代码修改和提交。</p>
-<h3 id="日常开发">日常开发</h3>
-<p>从 master 分支上 checkout 一个 feature 分支进行开发或者 bugfix 分支进行 bug 修复，功能测试完毕并且项目发布上线后，将 feature 分支合并到主干 master，并且打 Tag 发布，最后删除开发分支。</p>
-<h3 id="分支命名规范">分支命名规范</h3>
-<p>分支类型_分支发布时间_分支功能。<br>
-比如：feature_20191221_git_commit</p>
-<p>分支类型包括 feature、 bugfix、refactor 三种类型，<br>
-时间使用年月日进行命名，不足 2 位补 0。<br>
-分支功能命名使用 snake case 命名法。</p>
-<h3 id="tag">Tag</h3>
-<p>Tag 包括 3 位版本，前缀使用 v，比如 v0.1.13</p>
-<h4 id="tag-命名规范">Tag 命名规范</h4>
-<p>新功能开发使用第 2 位版本号，bug 修复使用第 3 位版本号</p>
-<p>核心基础库可以在大版本发布前使用灰度版本号，即在版本后面加上后缀，用中划线分隔。alpha 或者 beta 后面加上次数，即第几次 alpha：</p>
-<p>v2.0.0-alpha.1</p>
-<p>v2.0.0-beta.2</p>
-<p>版本正式发布前需要生成 changelog 文档，然后再发布上线。</p>
-<hr>
-
+        
       </div>
     </article>
   
