@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Git Commit Message | 文詣不文藝</title>
 <meta name="description" content="温故而知新" />
-<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1577027042531">
+<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1577027545607">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alphaidea.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://alphaidea.github.io">
-  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1577027042531" alt="">
+  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1577027545607" alt="">
   </a>
   <h1 class="site-title">
     文詣不文藝
@@ -148,7 +148,7 @@ git log HEAD --grep feat
 </ul>
 <h3 id="特殊情况-revert">特殊情况 Revert</h3>
 <p>有一种特殊情况，如果当前 commit 用于撤销以前的 commit：</p>
-<p>必须以 revert: 开头，后面跟着被撤销 Commit 的 Header<br>
+<p>必须以 revert: 开头，后面跟着被撤销 commit 的 Header<br>
 Body 部分的格式是固定的，必须写成 This reverts commit &lt;hash&gt;.<br>
 hash 为被撤销 commit 的 SHA 标识符</p>
 <h3 id="好的格式">好的格式</h3>
@@ -173,7 +173,7 @@ Co-authored-by: Full Name <a href="mailto:email@example.com">email@example.com</
 <h3 id="分支命名规范">分支命名规范</h3>
 <p>分支类型_分支发布时间_分支功能。<br>
 比如：feature_20191221_git_commit</p>
-<p>分支类型包括 feature、 bugfix、refactor 三种类型，<br>
+<p>分支类型包括 feature、bugfix、refactor 三种类型，<br>
 时间使用年月日进行命名，不足 2 位补 0。<br>
 分支功能命名使用 snake case 命名法。</p>
 <h3 id="tag">Tag</h3>

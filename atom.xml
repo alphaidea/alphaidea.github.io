@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alphaidea.github.io</id>
     <title>文詣不文藝</title>
-    <updated>2019-12-22T15:05:21.905Z</updated>
+    <updated>2019-12-22T15:12:33.227Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alphaidea.github.io"/>
     <link rel="self" href="https://alphaidea.github.io/atom.xml"/>
@@ -69,7 +69,7 @@ git log HEAD --grep feat
 </ul>
 <h3 id="特殊情况-revert">特殊情况 Revert</h3>
 <p>有一种特殊情况，如果当前 commit 用于撤销以前的 commit：</p>
-<p>必须以 revert: 开头，后面跟着被撤销 Commit 的 Header<br>
+<p>必须以 revert: 开头，后面跟着被撤销 commit 的 Header<br>
 Body 部分的格式是固定的，必须写成 This reverts commit &lt;hash&gt;.<br>
 hash 为被撤销 commit 的 SHA 标识符</p>
 <h3 id="好的格式">好的格式</h3>
@@ -94,7 +94,7 @@ Co-authored-by: Full Name <a href="mailto:email@example.com">email@example.com</
 <h3 id="分支命名规范">分支命名规范</h3>
 <p>分支类型_分支发布时间_分支功能。<br>
 比如：feature_20191221_git_commit</p>
-<p>分支类型包括 feature、 bugfix、refactor 三种类型，<br>
+<p>分支类型包括 feature、bugfix、refactor 三种类型，<br>
 时间使用年月日进行命名，不足 2 位补 0。<br>
 分支功能命名使用 snake case 命名法。</p>
 <h3 id="tag">Tag</h3>
