@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Git 常用命令 | 文詣不文藝</title>
+<title>Vim 常用快捷键 | 文詣不文藝</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1577410137415">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -77,85 +77,203 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Git 常用命令
+              Vim 常用快捷键
             </h2>
             <div class="post-info">
               <span>
-                2019-12-05
+                2019-12-26
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
-                <a href="https://alphaidea.github.io/tag/kbr3QMZde" class="post-tag">
-                  # Git
+                <a href="https://alphaidea.github.io/tag/_CRtAWC__" class="post-tag">
+                  # Vim
                 </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h2 id="拉取远端指定分支">拉取远端指定分支</h2>
-<pre><code class="language-bash">git clone -b [branch name] [git url] [local folder name]
-</code></pre>
-<h2 id="分支">分支</h2>
-<h3 id="下载远程仓库的所有变动">下载远程仓库的所有变动</h3>
-<pre><code class="language-bash">git fetch
-</code></pre>
-<h3 id="列出所有远程分支">列出所有远程分支</h3>
-<pre><code class="language-bash">git branch -r
-</code></pre>
-<h3 id="拉取-xx-分支并合并到本地分支">拉取 xx 分支并合并到本地分支</h3>
-<pre><code class="language-bash">git pull origin [branch name]
-</code></pre>
-<h3 id="切换到指定分支并更新工作区">切换到指定分支，并更新工作区</h3>
-<pre><code class="language-bash">git checkout [branch name]
-</code></pre>
-<h3 id="切换到上一个分支">切换到上一个分支</h3>
-<pre><code class="language-bash">git checkout -
-</code></pre>
-<h2 id="查看信息">查看信息</h2>
-<h3 id="显示有变更的文件">显示有变更的文件</h3>
-<pre><code class="language-bash">git status
-</code></pre>
-<h3 id="显示暂存区和工作区的差异">显示暂存区和工作区的差异</h3>
-<pre><code class="language-bash">git diff [filename]
-</code></pre>
-<h2 id="撤销">撤销</h2>
-<h3 id="恢复暂存区的指定文件到工作区">恢复暂存区的指定文件到工作区</h3>
-<pre><code class="language-bash">git checkout [filename]
-</code></pre>
-<h3 id="恢复暂存区的所有文件到工作区">恢复暂存区的所有文件到工作区</h3>
-<pre><code class="language-bash">git checkout .
-</code></pre>
+                <h2 id="正常模式">正常模式</h2>
+<table>
+<thead>
+<tr>
+<th>键</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>光标移动到行首</td>
+</tr>
+<tr>
+<td>a</td>
+<td>进入插入模式，在光标后</td>
+</tr>
+<tr>
+<td>e</td>
+<td>按照单词向后移动 字尾</td>
+</tr>
+<tr>
+<td>^ + f</td>
+<td>向下翻页</td>
+</tr>
+<tr>
+<td>h / ⌫</td>
+<td>左移动</td>
+</tr>
+<tr>
+<td>j</td>
+<td>下移一行</td>
+</tr>
+<tr>
+<td>k</td>
+<td>上移一行</td>
+</tr>
+<tr>
+<td>l / Space</td>
+<td>右移动</td>
+</tr>
+<tr>
+<td>i</td>
+<td>进入插入模式，在光标前</td>
+</tr>
+<tr>
+<td>p</td>
+<td>在光标之后粘贴</td>
+</tr>
+<tr>
+<td>:q!</td>
+<td>退出不保存</td>
+</tr>
+<tr>
+<td>r</td>
+<td>替换光标处的字符</td>
+</tr>
+<tr>
+<td>u</td>
+<td>undo</td>
+</tr>
+<tr>
+<td>v</td>
+<td>进入光标模式，配合移动键选</td>
+</tr>
+<tr>
+<td>中多行</td>
+<td></td>
+</tr>
+<tr>
+<td>yy / Y</td>
+<td>复制整行文本</td>
+</tr>
+<tr>
+<td>b</td>
+<td>按照单词向前移动 字首</td>
+</tr>
+<tr>
+<td>B</td>
+<td>按照单词向前移动 字首 忽略一些标点符号</td>
+</tr>
+<tr>
+<td>^ + b</td>
+<td>向上翻页</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>删除光标当前行</td>
+</tr>
+<tr>
+<td>dG</td>
+<td>删除光标后的全部文字</td>
+</tr>
+<tr>
+<td>E</td>
+<td>按照单词向后移动 字尾 忽略一些标点符号</td>
+</tr>
+<tr>
+<td>^ + e</td>
+<td>向下滚动</td>
+</tr>
+<tr>
+<td>gg</td>
+<td>移动到文档第一行</td>
+</tr>
+<tr>
+<td>G</td>
+<td>移动到文档最后一行</td>
+</tr>
+<tr>
+<td>NG</td>
+<td>到第 N 行</td>
+</tr>
+<tr>
+<td>字首 忽略一些标点符号</td>
+<td></td>
+</tr>
+<tr>
+<td>x</td>
+<td>剪切光标下的字符</td>
+</tr>
+<tr>
+<td>:x</td>
+<td>保存并退出</td>
+</tr>
+<tr>
+<td>/code</td>
+<td>向后查找 code 一样的内容</td>
+</tr>
+<tr>
+<td>?code</td>
+<td>向前查找 code 一样的内容</td>
+</tr>
+<tr>
+<td>:set nu</td>
+<td>设置行号显示</td>
+</tr>
+<tr>
+<td>$</td>
+<td>光标移动到行尾</td>
+</tr>
+<tr>
+<td>N<code>command</code></td>
+<td>重复某个命令 N 次</td>
+</tr>
+</tbody>
+</table>
+<h2 id="视图模式">视图模式</h2>
+<p>正常模式下按 v 可以进入可视模式， 在可视模式下，移动光标可以选择文本</p>
+<table>
+<thead>
+<tr>
+<th>键</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>V</td>
+<td>选择一行</td>
+</tr>
+<tr>
+<td>^ + V</td>
+<td>矩形选择</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference">Reference</h2>
+<p><a href="http://vim.rtorr.com" title="Yet another vim cheat sheet">A mobile friendly Vim cheat sheet</a></p>
+<p><a href="http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers" title="vgod's blog">給程式設計師的 Vim 入門圖解說明</a></p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E6%8B%89%E5%8F%96%E8%BF%9C%E7%AB%AF%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF">拉取远端指定分支</a></li>
-<li><a href="#%E5%88%86%E6%94%AF">分支</a>
-<ul>
-<li><a href="#%E4%B8%8B%E8%BD%BD%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E6%89%80%E6%9C%89%E5%8F%98%E5%8A%A8">下载远程仓库的所有变动</a></li>
-<li><a href="#%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF">列出所有远程分支</a></li>
-<li><a href="#%E6%8B%89%E5%8F%96-xx-%E5%88%86%E6%94%AF%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF">拉取 xx 分支并合并到本地分支</a></li>
-<li><a href="#%E5%88%87%E6%8D%A2%E5%88%B0%E6%8C%87%E5%AE%9A%E5%88%86%E6%94%AF%E5%B9%B6%E6%9B%B4%E6%96%B0%E5%B7%A5%E4%BD%9C%E5%8C%BA">切换到指定分支，并更新工作区</a></li>
-<li><a href="#%E5%88%87%E6%8D%A2%E5%88%B0%E4%B8%8A%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF">切换到上一个分支</a></li>
-</ul>
-</li>
-<li><a href="#%E6%9F%A5%E7%9C%8B%E4%BF%A1%E6%81%AF">查看信息</a>
-<ul>
-<li><a href="#%E6%98%BE%E7%A4%BA%E6%9C%89%E5%8F%98%E6%9B%B4%E7%9A%84%E6%96%87%E4%BB%B6">显示有变更的文件</a></li>
-<li><a href="#%E6%98%BE%E7%A4%BA%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8C%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7%9A%84%E5%B7%AE%E5%BC%82">显示暂存区和工作区的差异</a></li>
-</ul>
-</li>
-<li><a href="#%E6%92%A4%E9%94%80">撤销</a>
-<ul>
-<li><a href="#%E6%81%A2%E5%A4%8D%E6%9A%82%E5%AD%98%E5%8C%BA%E7%9A%84%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E5%88%B0%E5%B7%A5%E4%BD%9C%E5%8C%BA">恢复暂存区的指定文件到工作区</a></li>
-<li><a href="#%E6%81%A2%E5%A4%8D%E6%9A%82%E5%AD%98%E5%8C%BA%E7%9A%84%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%E5%88%B0%E5%B7%A5%E4%BD%9C%E5%8C%BA">恢复暂存区的所有文件到工作区</a></li>
-</ul>
-</li>
+<li><a href="#%E6%AD%A3%E5%B8%B8%E6%A8%A1%E5%BC%8F">正常模式</a></li>
+<li><a href="#%E8%A7%86%E5%9B%BE%E6%A8%A1%E5%BC%8F">视图模式</a></li>
+<li><a href="#reference">Reference</a></li>
 </ul>
 </li>
 </ul>
@@ -165,6 +283,15 @@
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://alphaidea.github.io/post/macos-keyboard-shortcuts">
+              <h3 class="post-title">
+                macOS 常用快捷键
+              </h3>
+            </a>
+          </div>
         
 
         
