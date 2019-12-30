@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>JavaScript 数字取整 | 文詣不文藝</title>
+<title>macOS Dev Setup Guide | 文詣不文藝</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1577708469422">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -77,68 +77,211 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              JavaScript 数字取整
+              macOS Dev Setup Guide
             </h2>
             <div class="post-info">
               <span>
-                2019-12-08
+                2019-12-30
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
               
-                <a href="https://alphaidea.github.io/tag/kCfMIgto_" class="post-tag">
-                  # JavaScript
+                <a href="https://alphaidea.github.io/tag/qyw-BMWXW" class="post-tag">
+                  # macOS
                 </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>实际开发过程中经常遇到数字取整问题，于是整理一下，方便查询</p>
-<h2 id="直接取整">直接取整</h2>
-<p>将数字的小数部分去掉，只保留整数部分</p>
-<pre><code class="language-javascript">Number.parseInt(3.14); // 3
-Number.parseInt(3.54); // 3
-Number.parseInt(-3.14); // -3
-Number.parseInt(-3.54); // -3
-
-Math.trunc(3.14); // 3
-Math.trunc(3.54); // 3
-Math.trunc(-3.14); // -3
-Math.trunc(-3.54); // -3
+                <h2 id="安装-macos-命令行工具">安装 macOS 命令行工具</h2>
+<pre><code class="language-bash">xcode-select --install
 </code></pre>
-<h2 id="四舍五入">四舍五入</h2>
-<p>将数值四舍五入为最接近的整数</p>
-<pre><code class="language-javascript">Math.round(3.14); // 3
-Math.round(3.54); // 4
-Math.round(-3.14); // -3
-Math.round(-3.54); // -4
+<h2 id="安装-homebrew-和-homebrew-cask">安装 Homebrew 和 Homebrew Cask</h2>
+<pre><code class="language-bash">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+brew update
+brew cask
 </code></pre>
-<h2 id="向下取整">向下取整</h2>
-<p>取向下最接近的整数</p>
-<pre><code class="language-javascript">Math.floor(3.14); // 3
-Math.floor(3.54); // 3
-Math.floor(-3.14); // -4
-Math.floor(-3.54); // -4
-</code></pre>
-<h2 id="向上取整">向上取整</h2>
-<p>取向上最接近的整数</p>
-<pre><code class="language-javascript">Math.ceil(3.14); // 4
-Math.ceil(3.54); // 4
-Math.ceil(-3.14); // -3
-Math.ceil(-3.54); // -3
-</code></pre>
+<h2 id="brew-安装常用工具">brew 安装常用工具</h2>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autojump</td>
+<td><code>brew install autojump</code></td>
+<td>一键直达任何目录</td>
+</tr>
+<tr>
+<td>bash-completion</td>
+<td><code>brew install bash-completion</code></td>
+<td>bash 补全</td>
+</tr>
+<tr>
+<td>git</td>
+<td><code>brew install git</code></td>
+<td>版本管理工具</td>
+</tr>
+<tr>
+<td>go</td>
+<td><code>brew install go</code></td>
+<td>go</td>
+</tr>
+<tr>
+<td>graphviz</td>
+<td><code>brew install graphviz</code></td>
+<td>拓扑图绘制工具</td>
+</tr>
+<tr>
+<td>lua</td>
+<td><code>brew install lua</code></td>
+<td>lua</td>
+</tr>
+<tr>
+<td>nginx</td>
+<td><code>brew install nginx</code></td>
+<td>Nginx</td>
+</tr>
+<tr>
+<td>node</td>
+<td><code>brew install node</code></td>
+<td>node</td>
+</tr>
+<tr>
+<td>nmap</td>
+<td><code>brew install nmap</code></td>
+<td>网络扫描工具</td>
+</tr>
+<tr>
+<td>python</td>
+<td><code>brew install python</code></td>
+<td>python</td>
+</tr>
+<tr>
+<td>shellcheck</td>
+<td><code>brew install shellcheck</code></td>
+<td>shell 脚本检查工具</td>
+</tr>
+</tbody>
+</table>
+<h2 id="brew-cask-安装常用工具">brew cask 安装常用工具</h2>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>命令</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dash</td>
+<td><code>brew cask install dash</code></td>
+<td>文档工具</td>
+</tr>
+<tr>
+<td>ezip</td>
+<td><code>brew cask install ezip</code></td>
+<td>查看、编辑压缩包，无需解压</td>
+</tr>
+<tr>
+<td>firefox</td>
+<td><code>brew cask install firefox</code></td>
+<td>终端工具</td>
+</tr>
+<tr>
+<td>flux</td>
+<td><code>brew cask install flux</code></td>
+<td>保护下眼睛</td>
+</tr>
+<tr>
+<td>foxmail</td>
+<td><code>brew cask install foxmail</code></td>
+<td>快速的邮件客户端</td>
+</tr>
+<tr>
+<td>google-chrome</td>
+<td><code>brew cask install google-chrome</code></td>
+<td>Chrome</td>
+</tr>
+<tr>
+<td>iina</td>
+<td><code>brew cask install iina</code></td>
+<td>modern media player for macOS</td>
+</tr>
+<tr>
+<td>iterm2</td>
+<td><code>brew cask install iterm2</code></td>
+<td>终端工具</td>
+</tr>
+<tr>
+<td>java</td>
+<td><code>brew cask install java</code></td>
+<td>open jdk java</td>
+</tr>
+<tr>
+<td>motrix</td>
+<td><code>brew cask install motrix</code></td>
+<td>下载工具</td>
+</tr>
+<tr>
+<td>mounty</td>
+<td><code>brew cask install mounty</code></td>
+<td>支持 NTFS 存储读写</td>
+</tr>
+<tr>
+<td>picgo</td>
+<td><code>brew cask install picgo</code></td>
+<td>支持常用 cdn 的图床工具</td>
+</tr>
+<tr>
+<td>postman</td>
+<td><code>brew cask install postman</code></td>
+<td>Postman</td>
+</tr>
+<tr>
+<td>termius</td>
+<td><code>brew cask install termius</code></td>
+<td>挺好看一终端工具</td>
+</tr>
+<tr>
+<td>typora</td>
+<td><code>brew cask install typora</code></td>
+<td>Markdown 工具</td>
+</tr>
+<tr>
+<td>sourcetree</td>
+<td><code>brew cask install sourcetree</code></td>
+<td>强大的 Git 跨平台客户端</td>
+</tr>
+<tr>
+<td>VS Code</td>
+<td><code>brew cask install visual-studio-code</code></td>
+<td>Visual Studio Code</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference">Reference</h2>
+<p><a href="http://sourabhbajaj.com/mac-setup" title="mac-setup">mac-setup</a></p>
+<p><a href="http://sourabhbajaj.com/mac-setup" title="mac-dev-setup">mac-dev-setup</a></p>
+<p><a href="https://github.com/serhii-londar/open-source-mac-os-apps" title="open-source-mac-os-apps ">open-source-mac-os-apps</a></p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E7%9B%B4%E6%8E%A5%E5%8F%96%E6%95%B4">直接取整</a></li>
-<li><a href="#%E5%9B%9B%E8%88%8D%E4%BA%94%E5%85%A5">四舍五入</a></li>
-<li><a href="#%E5%90%91%E4%B8%8B%E5%8F%96%E6%95%B4">向下取整</a></li>
-<li><a href="#%E5%90%91%E4%B8%8A%E5%8F%96%E6%95%B4">向上取整</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85-macos-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7">安装 macOS 命令行工具</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85-homebrew-%E5%92%8C-homebrew-cask">安装 Homebrew 和 Homebrew Cask</a></li>
+<li><a href="#brew-%E5%AE%89%E8%A3%85%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7">brew 安装常用工具</a></li>
+<li><a href="#brew-cask-%E5%AE%89%E8%A3%85%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7">brew cask 安装常用工具</a></li>
+<li><a href="#reference">Reference</a></li>
 </ul>
 </li>
 </ul>
@@ -151,9 +294,9 @@ Math.ceil(-3.54); // -3
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://alphaidea.github.io/post/git-frequent-command">
+            <a href="https://alphaidea.github.io/post/vim-keyboard-shortcuts">
               <h3 class="post-title">
-                Git 常用命令
+                Vim 常用快捷键
               </h3>
             </a>
           </div>
