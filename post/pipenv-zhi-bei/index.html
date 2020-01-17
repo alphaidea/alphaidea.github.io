@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Vim 常用快捷键 | 文詣不文藝</title>
+<title>pipenv 指北 | 文詣不文藝</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1579254673678">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -77,202 +77,108 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Vim 常用快捷键
+              pipenv 指北
             </h2>
             <div class="post-info">
               <span>
-                2019-12-26
+                2020-01-03
               </span>
               <span>
-                2 min read
+                3 min read
               </span>
               
-                <a href="https://alphaidea.github.io/tag/_CRtAWC__" class="post-tag">
-                  # Vim
+                <a href="https://alphaidea.github.io/tag/WUp_xdYlL" class="post-tag">
+                  # Python
                 </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h2 id="正常模式">正常模式</h2>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>光标移动到行首</td>
-</tr>
-<tr>
-<td>a</td>
-<td>进入插入模式，在光标后</td>
-</tr>
-<tr>
-<td>e</td>
-<td>按照单词向后移动 字尾</td>
-</tr>
-<tr>
-<td>^ + f</td>
-<td>向下翻页</td>
-</tr>
-<tr>
-<td>h / ⌫</td>
-<td>左移动</td>
-</tr>
-<tr>
-<td>j</td>
-<td>下移一行</td>
-</tr>
-<tr>
-<td>k</td>
-<td>上移一行</td>
-</tr>
-<tr>
-<td>l / Space</td>
-<td>右移动</td>
-</tr>
-<tr>
-<td>i</td>
-<td>进入插入模式，在光标前</td>
-</tr>
-<tr>
-<td>p</td>
-<td>在光标之后粘贴</td>
-</tr>
-<tr>
-<td>:q!</td>
-<td>退出不保存</td>
-</tr>
-<tr>
-<td>r</td>
-<td>替换光标处的字符</td>
-</tr>
-<tr>
-<td>u</td>
-<td>undo</td>
-</tr>
-<tr>
-<td>v</td>
-<td>进入光标模式，配合移动键选</td>
-</tr>
-<tr>
-<td>中多行</td>
-<td></td>
-</tr>
-<tr>
-<td>yy / Y</td>
-<td>复制整行文本</td>
-</tr>
-<tr>
-<td>b</td>
-<td>按照单词向前移动 字首</td>
-</tr>
-<tr>
-<td>B</td>
-<td>按照单词向前移动 字首 忽略一些标点符号</td>
-</tr>
-<tr>
-<td>^ + b</td>
-<td>向上翻页</td>
-</tr>
-<tr>
-<td>dd</td>
-<td>删除光标当前行</td>
-</tr>
-<tr>
-<td>dG</td>
-<td>删除光标后的全部文字</td>
-</tr>
-<tr>
-<td>E</td>
-<td>按照单词向后移动 字尾 忽略一些标点符号</td>
-</tr>
-<tr>
-<td>^ + e</td>
-<td>向下滚动</td>
-</tr>
-<tr>
-<td>gg</td>
-<td>移动到文档第一行</td>
-</tr>
-<tr>
-<td>G</td>
-<td>移动到文档最后一行</td>
-</tr>
-<tr>
-<td>NG</td>
-<td>到第 N 行</td>
-</tr>
-<tr>
-<td>字首 忽略一些标点符号</td>
-<td></td>
-</tr>
-<tr>
-<td>x</td>
-<td>剪切光标下的字符</td>
-</tr>
-<tr>
-<td>:x</td>
-<td>保存并退出</td>
-</tr>
-<tr>
-<td>/code</td>
-<td>向后查找 code 一样的内容</td>
-</tr>
-<tr>
-<td>?code</td>
-<td>向前查找 code 一样的内容</td>
-</tr>
-<tr>
-<td>:set nu</td>
-<td>设置行号显示</td>
-</tr>
-<tr>
-<td>$</td>
-<td>光标移动到行尾</td>
-</tr>
-<tr>
-<td>N<code>command</code></td>
-<td>重复某个命令 N 次</td>
-</tr>
-</tbody>
-</table>
-<h2 id="视图模式">视图模式</h2>
-<p>正常模式下按 v 可以进入可视模式， 在可视模式下，移动光标可以选择文本</p>
-<table>
-<thead>
-<tr>
-<th>键</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>V</td>
-<td>选择一行</td>
-</tr>
-<tr>
-<td>^ + V</td>
-<td>矩形选择</td>
-</tr>
-</tbody>
-</table>
+                <h2 id="what">What</h2>
+<p>pipenv 是 Python 官方推荐的包管理工具，能够帮助我们不必建立虚拟环境的情况下非常容易地安装和管理依赖。可以说，它集成了 virtualenv、pip 和 pyenv 三者的功能于一身。其目的旨在集合了所有的包管理工具的长处，类似于: Node.js 的 npm、yarn, PHP 的 composer 等。</p>
+<p>能够自动为项目创建和管理虚拟环境，从 Pipfile 文件添加或删除安装的包，同时生成 Pipfile.lock 来锁定安装包的版本和依赖信息，避免构建错误。同时兼容 requirements.txt 的包管理方式。</p>
+<h2 id="why">Why</h2>
+<p>pipenv 主要解决了如下问题</p>
+<ul>
+<li>快速创建虚拟环境，不用再单独使用 pip 和 virtualenv, 现在它们合并在一起了</li>
+<li>不用再维护 requirements.txt, 使用 Pipfile 和 Pipfile.lock 来代替</li>
+<li>提供的 pipenv 替代 pip 并自带一个依赖清单 Pipfile，和依赖锁定 Pipfile.lock</li>
+<li>可以使用多个 python 版本 (python2 和 python3)</li>
+<li>安全。广泛地使用 Hash 校验，能够自动曝露安全漏洞</li>
+<li>在安装了 pyenv 的条件下，可以自动安装需要的 Python 版本</li>
+<li>随时查看图形化的依赖关系</li>
+<li>通过加载 .env 文件简化开发流程</li>
+</ul>
+<h2 id="how">How</h2>
+<h3 id="安装">安装</h3>
+<pre><code class="language-bash">brew install pipenv
+pip install pipenv
+</code></pre>
+<h3 id="常用命令">常用命令</h3>
+<pre><code class="language-bash"># 初始化虚拟环境
+pipenv --python 2.7.16
+pipenv --python 3
+pipenv --python 3.7
+
+# 安装项目依赖，当没有 Pipfile 时会自动从 requirements.txt 文件导入安装包信息并创建 Pipfile
+pipenv install
+
+# 激活当前项目虚拟环境
+pipenv shell
+
+# 安装依赖包
+pipenv install urllib3
+pipenv install pytest --dev
+
+# 卸载安装包
+pipenv uninstall urllib3
+
+# 图形显示包依赖关系
+pipenv graph
+
+# 生成lockfile
+pipenv lock
+
+# 生成 requirements.txt 文件
+pipenv lock -r
+
+# 生成 dev-packages 的 requirements.txt 文件
+pipenv lock -r -d
+
+# 删除所有的安装包
+pipenv uninstall --all
+
+# 删除虚拟环境
+pipenv --rm
+</code></pre>
+<h3 id="pipenv-run">pipenv run</h3>
+<p>pipenv 还准备了一个 run 命令，可以不用显示激活虚拟环境的情况下，用虚拟环境执行命令</p>
+<pre><code class="language-bash">pipenv run python main.py
+</code></pre>
+<p>如果不想每次运行 Python 时都输入这么多，可以在 shell 中设置一个别名，例如<code>alias prp=&quot;pipenv run python&quot;</code></p>
 <h2 id="reference">Reference</h2>
-<p><a href="http://vim.rtorr.com" title="Yet another vim cheat sheet">A mobile friendly Vim cheat sheet</a></p>
-<p><a href="http://blog.vgod.tw/2009/12/08/vim-cheat-sheet-for-programmers" title="vgod's blog">給程式設計師的 Vim 入門圖解說明</a></p>
+<p><a href="https://github.com/pypa/pip" title="The Python package installer">pip</a></p>
+<p><a href="https://github.com/pyenv/pyenv" title="Simple Python version management">pyenv</a></p>
+<p><a href="https://github.com/pypa/pipenv" title="Python Development Workflow for Humans">pipenv</a></p>
+<p><a href="https://github.com/pypa/virtualenv" title="Virtual Python Environment builder">virtualenv</a></p>
+<p><a href="https://pipenv-zh.readthedocs.io/zh_CN/latest/basics.html">Pipenv 的基本使用</a></p>
+<p><a href="https://packaging.python.org/tutorials/managing-dependencies/#managing-dependencies" title="Python 官网推荐">Managing Application Dependencies</a></p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E6%AD%A3%E5%B8%B8%E6%A8%A1%E5%BC%8F">正常模式</a></li>
-<li><a href="#%E8%A7%86%E5%9B%BE%E6%A8%A1%E5%BC%8F">视图模式</a></li>
+<li><a href="#what">What</a></li>
+<li><a href="#why">Why</a></li>
+<li><a href="#how">How</a>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85">安装</a></li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4">常用命令</a></li>
+<li><a href="#pipenv-run">pipenv run</a></li>
+</ul>
+</li>
 <li><a href="#reference">Reference</a></li>
 </ul>
 </li>
@@ -286,9 +192,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://alphaidea.github.io/post/macos-keyboard-shortcuts">
+            <a href="https://alphaidea.github.io/post/macos-php-setup">
               <h3 class="post-title">
-                macOS 常用快捷键
+                macOS 配置 PHP 开发环境
               </h3>
             </a>
           </div>
