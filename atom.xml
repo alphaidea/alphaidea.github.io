@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alphaidea.github.io</id>
     <title>文詣不文藝</title>
-    <updated>2020-02-28T02:53:31.968Z</updated>
+    <updated>2020-02-29T06:08:09.309Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alphaidea.github.io"/>
     <link rel="self" href="https://alphaidea.github.io/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://alphaidea.github.io/images/avatar.png</logo>
     <icon>https://alphaidea.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 文詣不文藝</rights>
+    <entry>
+        <title type="html"><![CDATA[Style]]></title>
+        <id>https://alphaidea.github.io/post/style/</id>
+        <link href="https://alphaidea.github.io/post/style/">
+        </link>
+        <updated>2020-01-20T05:35:56.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Cheatsheets]]></title>
         <id>https://alphaidea.github.io/post/cheatsheets/</id>
@@ -72,12 +79,5 @@
         <link href="https://alphaidea.github.io/post/git-commit-message/">
         </link>
         <updated>2019-12-12T03:17:08.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JavaScript 数字取整]]></title>
-        <id>https://alphaidea.github.io/post/javascript-shu-zi-qu-zheng/</id>
-        <link href="https://alphaidea.github.io/post/javascript-shu-zi-qu-zheng/">
-        </link>
-        <updated>2019-12-08T03:03:42.000Z</updated>
     </entry>
 </feed>

@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>macOS 配置 PHP 开发环境 | 文詣不文藝</title>
+<title>Style | 文詣不文藝</title>
 <meta name="description" content="温故而知新" />
 <link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1582956484440">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -83,83 +83,47 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              macOS 配置 PHP 开发环境
+              Style
             </h2>
             <div class="post-info">
               <span>
-                2020-01-01
+                2020-01-20
               </span>
               <span>
-                2 min read
+                1 min read
               </span>
               
-                <a href="https://alphaidea.github.io/tag/mjpuU_xzW/" class="post-tag">
-                  # PHP
-                </a>
-              
-                <a href="https://alphaidea.github.io/tag/qyw-BMWXW/" class="post-tag">
-                  # macOS
+                <a href="https://alphaidea.github.io/tag/IZskY0N6u/" class="post-tag">
+                  # Style
                 </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>基于 macOS Catalina Version 10.15.2</p>
-<h2 id="使用-brew-安装-php">使用 brew 安装 PHP</h2>
-<pre><code class="language-bash">brew install php
-</code></pre>
-<h2 id="安装-xdebug">安装 xdebug</h2>
-<pre><code class="language-bash">pecl install xdebug
-</code></pre>
-<h2 id="配置-phpstorm">配置 PhpStorm</h2>
-<p>PhpStorm --&gt; Preferences --&gt; Language &amp; Frameworks --&gt; PHP --&gt; CLI Interpreter --&gt; path_to_php</p>
-<p>点击 Open in Editor</p>
-<p>去除</p>
-<pre><code class="language-conf">zend_extension=&lt;path_to_zend_debugger&gt;
-zend_extension=&lt;path_to_zend_optimizer&gt;
-</code></pre>
-<p>添加</p>
-<pre><code class="language-conf">[xdebug]
-zend_extension = &quot;&lt;path to xdebug extension&gt;&quot;
-xdebug.remote_enable = 1
-xdebug.remote_port = &quot;&lt;the port for Xdebug to listen to&gt;&quot; (the default port is 9000)
-xdebug.remote_host = localhost
-
-xdebug.remote_mode = &quot;req&quot;
-xdebug.remote_handler = &quot;dbgp&quot;
-xdebug.idekey = &quot;PHPSTORM&quot;
-xdebug.remote_autostart = 1
-</code></pre>
-<p><code>php --version</code> 看到 Xdebug 信息则说明 Xdebug 安装成功</p>
-<h2 id="配置-phpstorm-中的-xdebug">配置 PhpStorm 中的 Xdebug</h2>
-<p>PhpStorm --&gt; Preferences --&gt; Language &amp; Frameworks --&gt; PHP --&gt; Debug 配置相关信息，其中 Debug port 应与 php.ini 中一致</p>
-<h2 id="配置-phpstorm-中的-dbgp-proxy">配置 PhpStorm 中的 DBGp Proxy</h2>
-<p>PhpStorm --&gt; Preferences --&gt; Language &amp; Frameworks --&gt; PHP --&gt; Debug --&gt; DBGp Proxy 填写与项目监听相同的 Host 和 Port， IDE key 应与 php.ini 中一致</p>
-<h2 id="添加-rundebug-configurations">添加 Run/Debug Configurations</h2>
-<p>选择 PHP Built-in Web Server</p>
-<p>设置端口后启动即可</p>
-<p>根据 Listening for PHP Debug Connections 的启动状态即可启动调试功能</p>
-<h2 id="address-already-in-use">Address already in use</h2>
-<pre><code class="language-bash">lsof -i:PORT
-kill -9 pid
-</code></pre>
-<h2 id="reference">Reference</h2>
-<p><a href="https://xdebug.org" title="install Xdebug">Xdebug</a></p>
+                <p>优雅而高效的代码，就如同完美的手工艺品一样让人赏心悦目</p>
+<h2 id="go">Go</h2>
+<p><a href="https://github.com/uber-go/guide" title="The Uber Go Style Guide">Uber 内部的 Go 风格规范</a></p>
+<h2 id="php">PHP</h2>
+<p><a href="https://github.com/jupeter/clean-code-php" title="Clean Code concepts adapted for PHP">Clean Code PHP</a></p>
+<h2 id="python">Python</h2>
+<p><a href="https://github.com/piglei/one-python-craftsman" title="优秀的代码就是由无数优秀的细节组成的">如何编写优秀的 Python 代码</a></p>
+<h2 id="shell">Shell</h2>
+<p><a href="https://google.github.io/styleguide/shellguide.html">Shell Style Guide</a></p>
+<h2 id="others">Others</h2>
+<p><a href="https://github.com/sparanoid/chinese-copywriting-guidelines" title="Chinese Copywriting Guidelines">中文文案排版指北</a></p>
+<p><a href="https://github.com/ruanyf/document-style-guide" title="中文技术文档的写作规范">中文技术文档的写作规范</a></p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E4%BD%BF%E7%94%A8-brew-%E5%AE%89%E8%A3%85-php">使用 brew 安装 PHP</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85-xdebug">安装 xdebug</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE-phpstorm">配置 PhpStorm</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE-phpstorm-%E4%B8%AD%E7%9A%84-xdebug">配置 PhpStorm 中的 Xdebug</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE-phpstorm-%E4%B8%AD%E7%9A%84-dbgp-proxy">配置 PhpStorm 中的 DBGp Proxy</a></li>
-<li><a href="#%E6%B7%BB%E5%8A%A0-rundebug-configurations">添加 Run/Debug Configurations</a></li>
-<li><a href="#address-already-in-use">Address already in use</a></li>
-<li><a href="#reference">Reference</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#php">PHP</a></li>
+<li><a href="#python">Python</a></li>
+<li><a href="#shell">Shell</a></li>
+<li><a href="#others">Others</a></li>
 </ul>
 </li>
 </ul>
@@ -172,9 +136,9 @@ kill -9 pid
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://alphaidea.github.io/post/macos-dev-setup-guide/">
+            <a href="https://alphaidea.github.io/post/cheatsheets/">
               <h3 class="post-title">
-                macOS Dev Setup Guide
+                Cheatsheets
               </h3>
             </a>
           </div>
