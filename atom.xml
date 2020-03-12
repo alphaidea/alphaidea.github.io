@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://alphaidea.github.io</id>
+    <id>https://alphaidea.github.io</id>
     <title>文詣不文藝</title>
-    <updated>2020-03-12T02:40:47.510Z</updated>
+    <updated>2020-03-12T02:41:44.646Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://alphaidea.github.io"/>
-    <link rel="self" href="http://alphaidea.github.io/atom.xml"/>
+    <link rel="alternate" href="https://alphaidea.github.io"/>
+    <link rel="self" href="https://alphaidea.github.io/atom.xml"/>
     <subtitle>從來如此，便对吗？</subtitle>
-    <logo>http://alphaidea.github.io/images/avatar.png</logo>
-    <icon>http://alphaidea.github.io/favicon.ico</icon>
+    <logo>https://alphaidea.github.io/images/avatar.png</logo>
+    <icon>https://alphaidea.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 文詣不文藝</rights>
     <entry>
         <title type="html"><![CDATA[Style]]></title>
-        <id>http://alphaidea.github.io/post/style/</id>
-        <link href="http://alphaidea.github.io/post/style/">
+        <id>https://alphaidea.github.io/post/style/</id>
+        <link href="https://alphaidea.github.io/post/style/">
         </link>
         <updated>2020-01-20T05:35:56.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Cheatsheets]]></title>
-        <id>http://alphaidea.github.io/post/cheatsheets/</id>
-        <link href="http://alphaidea.github.io/post/cheatsheets/">
+        <id>https://alphaidea.github.io/post/cheatsheets/</id>
+        <link href="https://alphaidea.github.io/post/cheatsheets/">
         </link>
         <updated>2020-01-18T02:47:42.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[iOS Setup]]></title>
-        <id>http://alphaidea.github.io/post/ios-setup/</id>
-        <link href="http://alphaidea.github.io/post/ios-setup/">
+        <id>https://alphaidea.github.io/post/ios-setup/</id>
+        <link href="https://alphaidea.github.io/post/ios-setup/">
         </link>
         <updated>2020-01-16T02:47:59.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[pipenv 指北]]></title>
-        <id>http://alphaidea.github.io/post/pipenv-zhi-bei/</id>
-        <link href="http://alphaidea.github.io/post/pipenv-zhi-bei/">
+        <id>https://alphaidea.github.io/post/pipenv-zhi-bei/</id>
+        <link href="https://alphaidea.github.io/post/pipenv-zhi-bei/">
         </link>
         <updated>2020-01-06T09:44:05.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[macOS 配置 PHP 开发环境]]></title>
-        <id>http://alphaidea.github.io/post/macos-php-setup/</id>
-        <link href="http://alphaidea.github.io/post/macos-php-setup/">
+        <id>https://alphaidea.github.io/post/macos-php-setup/</id>
+        <link href="https://alphaidea.github.io/post/macos-php-setup/">
         </link>
         <updated>2020-01-01T05:35:18.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[macOS Dev Setup Guide]]></title>
-        <id>http://alphaidea.github.io/post/macos-dev-setup-guide/</id>
-        <link href="http://alphaidea.github.io/post/macos-dev-setup-guide/">
+        <id>https://alphaidea.github.io/post/macos-dev-setup-guide/</id>
+        <link href="https://alphaidea.github.io/post/macos-dev-setup-guide/">
         </link>
         <updated>2019-12-30T12:18:37.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Vim 常用快捷键]]></title>
-        <id>http://alphaidea.github.io/post/vim-keyboard-shortcuts/</id>
-        <link href="http://alphaidea.github.io/post/vim-keyboard-shortcuts/">
+        <id>https://alphaidea.github.io/post/vim-keyboard-shortcuts/</id>
+        <link href="https://alphaidea.github.io/post/vim-keyboard-shortcuts/">
         </link>
         <updated>2019-12-26T09:03:07.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[macOS 常用快捷键]]></title>
-        <id>http://alphaidea.github.io/post/macos-keyboard-shortcuts/</id>
-        <link href="http://alphaidea.github.io/post/macos-keyboard-shortcuts/">
+        <id>https://alphaidea.github.io/post/macos-keyboard-shortcuts/</id>
+        <link href="https://alphaidea.github.io/post/macos-keyboard-shortcuts/">
         </link>
         <updated>2019-12-21T07:01:35.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[VS Code 常用快捷键]]></title>
-        <id>http://alphaidea.github.io/post/vs-code-keyboard-shortcuts/</id>
-        <link href="http://alphaidea.github.io/post/vs-code-keyboard-shortcuts/">
+        <id>https://alphaidea.github.io/post/vs-code-keyboard-shortcuts/</id>
+        <link href="https://alphaidea.github.io/post/vs-code-keyboard-shortcuts/">
         </link>
         <updated>2019-12-16T12:35:30.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[优雅地提交 Git Commit Message]]></title>
-        <id>http://alphaidea.github.io/post/git-commit-message/</id>
-        <link href="http://alphaidea.github.io/post/git-commit-message/">
+        <id>https://alphaidea.github.io/post/git-commit-message/</id>
+        <link href="https://alphaidea.github.io/post/git-commit-message/">
         </link>
         <updated>2019-12-12T03:17:08.000Z</updated>
     </entry>
