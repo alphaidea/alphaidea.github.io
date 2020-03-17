@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Cheatsheets | 文詣不文藝</title>
+<title>macOS 无法安装第三方应用 | 文詣不文藝</title>
 <meta name="description" content="從來如此，便对吗？" />
 <link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1584445703993">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -83,31 +83,49 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Cheatsheets
+              macOS 无法安装第三方应用
             </h2>
             <div class="post-info">
               <span>
-                2020-01-18
+                2020-01-23
               </span>
               <span>
                 1 min read
               </span>
               
-                <a href="https://alphaidea.github.io/tag/imzqhZqr1/" class="post-tag">
-                  # Cheatsheet
+                <a href="https://alphaidea.github.io/tag/qyw-BMWXW/" class="post-tag">
+                  # macOS
                 </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p><a href="https://github.com/enochtangg/quick-SQL-cheatsheet" title="A quick reminder of all relevant SQL queries and examples on how to use them">Quick SQL Cheatsheet</a></p>
-<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" title="quick reference and showcase">Markdown Cheatsheet</a></p>
-<p><a href="https://github.com/denisidoro/navi" title="An interactive cheatsheet tool for the command-line">navi</a></p>
+                <p>macOS 经常无法安装 App Store 之外的应用，一般提示</p>
+<ol>
+<li>应用程序 &quot;XXXXXX&quot; 无法打开</li>
+<li>xxx.app 已损坏，打不开。你应该将它移到废纸篓</li>
+<li>提示程序含有恶意代码</li>
+</ol>
+<p>解决方案如下</p>
+<h2 id="设置允许任何来源的应用">设置允许任何来源的应用</h2>
+<p>在 Terminal 中输入 <code>sudo spctl --master-disable</code> 回车输入密码（不可见）<br>
+然后重新运行下载的应用程序即可</p>
+<h2 id="移除这个应用的安全隔离属性">移除这个应用的安全隔离属性</h2>
+<p>在升级到 Catalina 之后，可能会出现上述步骤执行后依然无法运行程序的情况，此时在终端输入 <code>xattr -r -d com.apple.quarantine /Applications/xxxx.app</code> 后面为 App 的绝对路径，App 建议直接拖放到终端，会自动填写路径</p>
+<p>重新运行下载的应用程序即可</p>
 
               </div>
               <div class="toc-container">
-                
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E5%85%81%E8%AE%B8%E4%BB%BB%E4%BD%95%E6%9D%A5%E6%BA%90%E7%9A%84%E5%BA%94%E7%94%A8">设置允许任何来源的应用</a></li>
+<li><a href="#%E7%A7%BB%E9%99%A4%E8%BF%99%E4%B8%AA%E5%BA%94%E7%94%A8%E7%9A%84%E5%AE%89%E5%85%A8%E9%9A%94%E7%A6%BB%E5%B1%9E%E6%80%A7">移除这个应用的安全隔离属性</a></li>
+</ul>
+</li>
+</ul>
+
               </div>
             </div>
           </article>
@@ -116,9 +134,9 @@
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://alphaidea.github.io/post/ios-setup/">
+            <a href="https://alphaidea.github.io/post/style/">
               <h3 class="post-title">
-                iOS Setup
+                Style
               </h3>
             </a>
           </div>
