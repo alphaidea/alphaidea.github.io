@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>macOS 配置 PHP 开发环境 | 文詣不文藝</title>
 <meta name="description" content="從來如此，便对吗？" />
-<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1586832210849">
+<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1586845531648">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alphaidea.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://alphaidea.github.io">
-  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1586832210849" alt="">
+  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1586845531648" alt="">
   </a>
   <h1 class="site-title">
     文詣不文藝
@@ -105,15 +105,24 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>基于 macOS Catalina Version 10.15.2</p>
+                <h1 id="macos-配置-php-开发环境">macOS 配置 PHP 开发环境</h1>
+<p>基于 macOS Catalina Version 10.15.3</p>
 <h2 id="使用-brew-安装-php">使用 brew 安装 PHP</h2>
 <pre><code class="language-bash">brew install php
 </code></pre>
-<h2 id="安装-xdebug">安装 xdebug</h2>
-<pre><code class="language-bash">pecl install xdebug
+<h2 id="phpstorm-基本配置">PhpStorm 基本配置</h2>
+<h3 id="自动添加文末空白行">自动添加文末空白行</h3>
+<p><code>PhpStorm --&gt; Preferences --&gt; Editor --&gt; General --&gt; Ensure line feed at file end on Save</code></p>
+<h3 id="phpstorm-字体修改">PhpStorm 字体修改</h3>
+<p><code>PhpStorm --&gt; Preferences --&gt; Editor --&gt; Font --&gt; JetBrains Mono</code></p>
+<h3 id="phpstorm-显示空格和-tab">PhpStorm 显示空格和 tab</h3>
+<p><code>PhpStorm --&gt; Preferences --&gt; Editor --&gt; General --&gt; Appearance --&gt; Show whitespaces</code></p>
+<h2 id="phpstorm-配置-xdebug">PhpStorm 配置 xdebug</h2>
+<h3 id="安装-xdebug">安装 xdebug</h3>
+<pre><code class="language-shell">pecl install xdebug
 </code></pre>
-<h2 id="配置-phpstorm">配置 PhpStorm</h2>
-<p>PhpStorm --&gt; Preferences --&gt; Language &amp; Frameworks --&gt; PHP --&gt; CLI Interpreter --&gt; path_to_php</p>
+<h3 id="配置-phpstorm">配置 PhpStorm</h3>
+<p><code>PhpStorm --&gt; Preferences --&gt; Language &amp; Frameworks --&gt; PHP --&gt; CLI Interpreter --&gt; path_to_php</code></p>
 <p>点击 Open in Editor</p>
 <p>去除</p>
 <pre><code class="language-conf">zend_extension=&lt;path_to_zend_debugger&gt;
@@ -131,10 +140,11 @@ xdebug.remote_handler = &quot;dbgp&quot;
 xdebug.idekey = &quot;PHPSTORM&quot;
 xdebug.remote_autostart = 1
 </code></pre>
+<p>确保有且仅有一个 <code>zend_extension = &quot;&lt;path to xdebug extension&gt;&quot;</code></p>
 <p><code>php --version</code> 看到 Xdebug 信息则说明 Xdebug 安装成功</p>
-<h2 id="配置-phpstorm-中的-xdebug">配置 PhpStorm 中的 Xdebug</h2>
-<p>PhpStorm --&gt; Preferences --&gt; Language &amp; Frameworks --&gt; PHP --&gt; Debug 配置相关信息，其中 Debug port 应与 php.ini 中一致</p>
-<h2 id="配置-phpstorm-中的-dbgp-proxy">配置 PhpStorm 中的 DBGp Proxy</h2>
+<h3 id="配置-phpstorm-中的-xdebug">配置 PhpStorm 中的 Xdebug</h3>
+<p><code>PhpStorm --&gt; Preferences --&gt; Language &amp; Frameworks --&gt; PHP --&gt; Debug</code> 配置相关信息，其中 Debug port 应与 php.ini 中一致</p>
+<h3 id="配置-phpstorm-中的-dbgp-proxy">配置 PhpStorm 中的 DBGp Proxy</h3>
 <p>PhpStorm --&gt; Preferences --&gt; Language &amp; Frameworks --&gt; PHP --&gt; Debug --&gt; DBGp Proxy 填写与项目监听相同的 Host 和 Port， IDE key 应与 php.ini 中一致</p>
 <h2 id="添加-rundebug-configurations">添加 Run/Debug Configurations</h2>
 <p>选择 PHP Built-in Web Server</p>
@@ -150,13 +160,24 @@ kill -9 pid
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li>
+<li><a href="#macos-%E9%85%8D%E7%BD%AE-php-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">macOS 配置 PHP 开发环境</a>
 <ul>
 <li><a href="#%E4%BD%BF%E7%94%A8-brew-%E5%AE%89%E8%A3%85-php">使用 brew 安装 PHP</a></li>
+<li><a href="#phpstorm-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE">PhpStorm 基本配置</a>
+<ul>
+<li><a href="#%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E6%96%87%E6%9C%AB%E7%A9%BA%E7%99%BD%E8%A1%8C">自动添加文末空白行</a></li>
+<li><a href="#phpstorm-%E5%AD%97%E4%BD%93%E4%BF%AE%E6%94%B9">PhpStorm 字体修改</a></li>
+<li><a href="#phpstorm-%E6%98%BE%E7%A4%BA%E7%A9%BA%E6%A0%BC%E5%92%8C-tab">PhpStorm 显示空格和 tab</a></li>
+</ul>
+</li>
+<li><a href="#phpstorm-%E9%85%8D%E7%BD%AE-xdebug">PhpStorm 配置 xdebug</a>
+<ul>
 <li><a href="#%E5%AE%89%E8%A3%85-xdebug">安装 xdebug</a></li>
 <li><a href="#%E9%85%8D%E7%BD%AE-phpstorm">配置 PhpStorm</a></li>
 <li><a href="#%E9%85%8D%E7%BD%AE-phpstorm-%E4%B8%AD%E7%9A%84-xdebug">配置 PhpStorm 中的 Xdebug</a></li>
 <li><a href="#%E9%85%8D%E7%BD%AE-phpstorm-%E4%B8%AD%E7%9A%84-dbgp-proxy">配置 PhpStorm 中的 DBGp Proxy</a></li>
+</ul>
+</li>
 <li><a href="#%E6%B7%BB%E5%8A%A0-rundebug-configurations">添加 Run/Debug Configurations</a></li>
 <li><a href="#address-already-in-use">Address already in use</a></li>
 <li><a href="#reference">Reference</a></li>
