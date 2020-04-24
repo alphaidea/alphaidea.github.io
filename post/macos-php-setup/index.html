@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>macOS 配置 PHP 开发环境 | 文詣不文藝</title>
 <meta name="description" content="從來如此，便对吗？" />
-<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1586845531648">
+<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1587711556792">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alphaidea.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://alphaidea.github.io">
-  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1586845531648" alt="">
+  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1587711556792" alt="">
   </a>
   <h1 class="site-title">
     文詣不文藝
@@ -90,7 +90,7 @@
                 2020-01-01
               </span>
               <span>
-                2 min read
+                3 min read
               </span>
               
                 <a href="https://alphaidea.github.io/tag/mjpuU_xzW/" class="post-tag">
@@ -105,10 +105,14 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h1 id="macos-配置-php-开发环境">macOS 配置 PHP 开发环境</h1>
-<p>基于 macOS Catalina Version 10.15.3</p>
-<h2 id="使用-brew-安装-php">使用 brew 安装 PHP</h2>
-<pre><code class="language-bash">brew install php
+                <p>基于 macOS Catalina Version 10.15.3</p>
+<h2 id="使用-brew-安装-php-composer-和-php-code-sniffer">使用 brew 安装 PHP、composer 和 php-code-sniffer</h2>
+<pre><code class="language-shell">brew install php
+brew install php-code-sniffer
+brew install composer
+</code></pre>
+<h2 id="安装-mongodb-扩展">安装 mongodb 扩展</h2>
+<pre><code class="language-shell">pecl install mongodb
 </code></pre>
 <h2 id="phpstorm-基本配置">PhpStorm 基本配置</h2>
 <h3 id="自动添加文末空白行">自动添加文末空白行</h3>
@@ -117,6 +121,11 @@
 <p><code>PhpStorm --&gt; Preferences --&gt; Editor --&gt; Font --&gt; JetBrains Mono</code></p>
 <h3 id="phpstorm-显示空格和-tab">PhpStorm 显示空格和 tab</h3>
 <p><code>PhpStorm --&gt; Preferences --&gt; Editor --&gt; General --&gt; Appearance --&gt; Show whitespaces</code></p>
+<h2 id="phpstorm-配置-code-sniffer">PhpStorm 配置 Code Sniffer</h2>
+<p><code>PhpStorm --&gt; Preferences --&gt; Languages &amp; Frameworks --&gt; PHP --&gt; Quality Tools --&gt; PHP_CodeSniffer</code></p>
+<p>phpcs 路径为：<code>/usr/local/Cellar/php-code-sniffer/3.5.4/bin/phpcs</code><br>
+phpcbf 路径为：<code>/usr/local/Cellar/php-code-sniffer/3.5.4/bin/phpcbf</code></p>
+<p><code>PhpStorm --&gt; Preferences --&gt; Editor --&gt; Inspections --&gt; Quality Tools --&gt; PHP_CodeSniffer validation</code></p>
 <h2 id="phpstorm-配置-xdebug">PhpStorm 配置 xdebug</h2>
 <h3 id="安装-xdebug">安装 xdebug</h3>
 <pre><code class="language-shell">pecl install xdebug
@@ -151,18 +160,20 @@ xdebug.remote_autostart = 1
 <p>设置端口后启动即可</p>
 <p>根据 Listening for PHP Debug Connections 的启动状态即可启动调试功能</p>
 <h2 id="address-already-in-use">Address already in use</h2>
-<pre><code class="language-bash">lsof -i:PORT
+<pre><code class="language-shell">lsof -i:PORT
 kill -9 pid
 </code></pre>
 <h2 id="reference">Reference</h2>
-<p><a href="https://xdebug.org" title="install Xdebug">Xdebug</a></p>
+<p><a href="https://xdebug.org" title="install Xdebug">Xdebug</a><br>
+<a href="https://github.com/squizlabs/PHP_CodeSniffer" title="detects violations of a defined set of coding standards">PHP_CodeSniffer</a></p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li><a href="#macos-%E9%85%8D%E7%BD%AE-php-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">macOS 配置 PHP 开发环境</a>
+<li>
 <ul>
-<li><a href="#%E4%BD%BF%E7%94%A8-brew-%E5%AE%89%E8%A3%85-php">使用 brew 安装 PHP</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8-brew-%E5%AE%89%E8%A3%85-php-composer-%E5%92%8C-php-code-sniffer">使用 brew 安装 PHP、composer 和 php-code-sniffer</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85-mongodb-%E6%89%A9%E5%B1%95">安装 mongodb 扩展</a></li>
 <li><a href="#phpstorm-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE">PhpStorm 基本配置</a>
 <ul>
 <li><a href="#%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E6%96%87%E6%9C%AB%E7%A9%BA%E7%99%BD%E8%A1%8C">自动添加文末空白行</a></li>
@@ -170,6 +181,7 @@ kill -9 pid
 <li><a href="#phpstorm-%E6%98%BE%E7%A4%BA%E7%A9%BA%E6%A0%BC%E5%92%8C-tab">PhpStorm 显示空格和 tab</a></li>
 </ul>
 </li>
+<li><a href="#phpstorm-%E9%85%8D%E7%BD%AE-code-sniffer">PhpStorm 配置 Code Sniffer</a></li>
 <li><a href="#phpstorm-%E9%85%8D%E7%BD%AE-xdebug">PhpStorm 配置 xdebug</a>
 <ul>
 <li><a href="#%E5%AE%89%E8%A3%85-xdebug">安装 xdebug</a></li>
