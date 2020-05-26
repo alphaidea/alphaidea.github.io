@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>macOS Dev Setup Guide | 文詣不文藝</title>
 <meta name="description" content="從來如此，便对吗？" />
-<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1587711556792">
+<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1590493360771">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alphaidea.github.io/styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://alphaidea.github.io">
-  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1587711556792" alt="">
+  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1590493360771" alt="">
   </a>
   <h1 class="site-title">
     文詣不文藝
@@ -90,7 +90,7 @@
                 2019-12-30
               </span>
               <span>
-                2 min read
+                3 min read
               </span>
               
                 <a href="https://alphaidea.github.io/tag/qyw-BMWXW/" class="post-tag">
@@ -108,6 +108,26 @@
 <pre><code class="language-bash">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
 brew update
 brew cask
+</code></pre>
+<h2 id="homebrew-下载加速">Homebrew 下载加速</h2>
+<h3 id="替换-brewgit">替换 brew.git</h3>
+<pre><code class="language-bash">cd &quot;$(brew --repo)&quot;
+git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+</code></pre>
+<h3 id="替换-homebrew-coregit">替换 homebrew-core.git</h3>
+<pre><code class="language-bash">cd &quot;$(brew --repo)/Library/Taps/homebrew/homebrew-core&quot;
+git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+</code></pre>
+<h3 id="配置-homebrew-bottles-镜像">配置 Homebrew Bottles 镜像</h3>
+<h4 id="bash">bash</h4>
+<pre><code class="language-bash">echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' &gt;&gt; ~/.bash_profile
+
+source ~/.bash_profile
+</code></pre>
+<h4 id="zsh">zsh</h4>
+<pre><code class="language-bash">echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' &gt;&gt; ~/.zshrc
+
+source ~/.zshrc
 </code></pre>
 <h2 id="brew-安装常用工具">brew 安装常用工具</h2>
 <table>
@@ -297,6 +317,7 @@ brew cask
 <p><a href="http://sourabhbajaj.com/mac-setup" title="mac-setup">mac-setup</a></p>
 <p><a href="http://sourabhbajaj.com/mac-setup" title="mac-dev-setup">mac-dev-setup</a></p>
 <p><a href="https://github.com/serhii-londar/open-source-mac-os-apps" title="open-source-mac-os-apps ">open-source-mac-os-apps</a></p>
+<p><a href="https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git" title="中科大源">替换及重置 Homebrew 默认源</a></p>
 
               </div>
               <div class="toc-container">
@@ -305,6 +326,18 @@ brew cask
 <ul>
 <li><a href="#%E5%AE%89%E8%A3%85-macos-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7">安装 macOS 命令行工具</a></li>
 <li><a href="#%E5%AE%89%E8%A3%85-homebrew-%E5%92%8C-homebrew-cask">安装 Homebrew 和 Homebrew Cask</a></li>
+<li><a href="#homebrew-%E4%B8%8B%E8%BD%BD%E5%8A%A0%E9%80%9F">Homebrew 下载加速</a>
+<ul>
+<li><a href="#%E6%9B%BF%E6%8D%A2-brewgit">替换 brew.git</a></li>
+<li><a href="#%E6%9B%BF%E6%8D%A2-homebrew-coregit">替换 homebrew-core.git</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE-homebrew-bottles-%E9%95%9C%E5%83%8F">配置 Homebrew Bottles 镜像</a>
+<ul>
+<li><a href="#bash">bash</a></li>
+<li><a href="#zsh">zsh</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#brew-%E5%AE%89%E8%A3%85%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7">brew 安装常用工具</a></li>
 <li><a href="#brew-cask-%E5%AE%89%E8%A3%85%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7">brew cask 安装常用工具</a></li>
 <li><a href="#reference">Reference</a></li>
