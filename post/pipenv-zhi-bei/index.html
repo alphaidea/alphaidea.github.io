@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>pipenv 指北 | 文詣不文藝</title>
 <meta name="description" content="從來如此，便对吗？" />
-<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1594374320546">
+<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1595226389842">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alphaidea.github.io/styles/main.css">
@@ -29,7 +29,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://alphaidea.github.io">
-  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1594374320546" alt="">
+  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1595226389842" alt="">
   </a>
   <h1 class="site-title">
     文詣不文藝
@@ -99,7 +99,7 @@
                 2020-01-06
               </span>
               <span>
-                3 min read
+                5 min read
               </span>
               
                 <a href="https://alphaidea.github.io/tag/WUp_xdYlL/" class="post-tag">
@@ -110,7 +110,19 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h2 id="what">What</h2>
+                <p>依赖管理一直都在编程语言中占据着至关重要的地位，虽然不同编程语言的依赖管理工具不尽相同，但是 TA 们追求的目标都是大同小异的：能够对项目依赖进行更加轻松统一的管理，能够更加便捷的进行项目迁移和部署。</p>
+<p>因此，就出现了 maven、composer、npm、pip 这些依赖包管理工具，但是，对比于 Java、PHP 和 Node.js，Python 在依赖管理方面更加特殊，不仅需要考虑项目依赖的第三方包，还要着重考虑虚拟环境。这一点，是由于 Python 和 Java、PHP、Node.js 这些编程语言本质上存在差异导致的。</p>
+<p>Java、PHP、Node.js 是以项目进行隔离，每当开发一个项目，依赖包都是安装在项目工程路径下。每个工程相互之间是隔离的，这样，即便是不同工程用到同一个包的不同版本，它们之间也不会产生冲突。但是 Python 则不同，在 Python 中无法通过工程对依赖包进行隔离。</p>
+<p>当使用 pip 安装第三方包时，所有的依赖都会安装到安装目录下的 site-packages。这样当不同的项目依赖同一个包的不同版本时就会产生冲突，同时只能存在一个版本的包。显然这是非常不友好的。</p>
+<p>为了解决这个问题，虚拟环境就起到了至关重要的作用。在开发不同的工程时，可以创建并激活不同的虚拟环境。这样，不同的工程就会用到不同环境下的解析器，我们也可以把依赖包安装到不同虚拟环境的 site-packages 路径下。</p>
+<p>因此，在 Python 中依赖管理一般指代依赖管理 + 虚拟环境。以往，Python 工程师针对Python 依赖管理和虚拟环境经常会用到 2 个工具：pip 和 virtualenv。pip 用于依赖包管理，virtualenv 用于虚拟环境管理。这样虽然解决了不同工程之间环境隔离的问题，但是也存在着明显的不足：</p>
+<ol>
+<li>需要同时依赖2款管理工具</li>
+<li>不能动态更新requirements.txt</li>
+</ol>
+<p>在工程开发过程中，需要一个配置文件来记录依赖包和环境参数，例如，maven 的 pom.xml、composer 的 composer.json 以及 npm 的 package.json。</p>
+<p>因此，由 requests、flask 等知名工具包的作者 Kenneth Reitz 于 2017 年发布的一款 Python 依赖包管理工具 pipenv 就诞生了。</p>
+<h2 id="what">What</h2>
 <p>pipenv 是 Python 官方推荐的包管理工具，能够帮助我们不必建立虚拟环境的情况下非常容易地安装和管理依赖。可以说，它集成了 virtualenv、pip 和 pyenv 三者的功能于一身。其目的旨在集合了所有的包管理工具的长处，类似于: Node.js 的 npm、yarn, PHP 的 composer 等。</p>
 <p>能够自动为项目创建和管理虚拟环境，从 Pipfile 文件添加或删除安装的包，同时生成 Pipfile.lock 来锁定安装包的版本和依赖信息，避免构建错误。同时兼容 requirements.txt 的包管理方式。</p>
 <h2 id="why">Why</h2>
