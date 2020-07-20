@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>poetry 指北 | 文詣不文藝</title>
 <meta name="description" content="從來如此，便对吗？" />
-<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1595226389842">
+<link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1595229139701">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://alphaidea.github.io/styles/main.css">
@@ -29,7 +29,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://alphaidea.github.io">
-  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1595226389842" alt="">
+  <img class="avatar" src="https://alphaidea.github.io/images/avatar.png?v=1595229139701" alt="">
   </a>
   <h1 class="site-title">
     文詣不文藝
@@ -173,8 +173,19 @@ poetry remove numpy
 # 图形显示包依赖关系
 poetry show --tree
 </code></pre>
+<h2 id="使用-pypi-镜像">使用 PyPi 镜像</h2>
+<p>由于网络原因，部分地区使用默认的 PyPi 源可能效果不佳。通过在 pyproject.toml 中配置源可以使 poetry 从指定的 PyPi 镜像中拉取代码。</p>
+<pre><code>[[tool.poetry.source]]
+name = &quot;tsinghua&quot;
+default = true
+url = &quot;https://pypi.tuna.tsinghua.edu.cn/simple&quot;
+
+[[tool.poetry.source]]
+name = &quot;douban&quot;
+url = &quot;https://pypi.doubanio.com/simple/&quot;
+</code></pre>
 <h2 id="notation">Notation</h2>
-<p>poetry 或许目前依然存在着某些不足之处，但是，它的确提供了一套当前最为完善的 Python 依赖包管理解决方案。相对与当前的 pip、pipenv 具有很多显而易见的优势</p>
+<p>poetry 或许目前依然存在着某些不足之处，但是，TA 的确提供了一套当前最为完善的 Python 依赖包管理解决方案。相对与当前的 pip、pipenv 具有很多显而易见的优势</p>
 <h2 id="reference">Reference</h2>
 <p><a href="https://github.com/pypa/pip" title="The Python package installer">pip</a></p>
 <p><a href="https://github.com/pypa/pipenv" title="Python Development Workflow for Humans">pipenv</a></p>
@@ -194,6 +205,7 @@ poetry show --tree
 <li><a href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4">常用命令</a></li>
 </ul>
 </li>
+<li><a href="#%E4%BD%BF%E7%94%A8-pypi-%E9%95%9C%E5%83%8F">使用 PyPi 镜像</a></li>
 <li><a href="#notation">Notation</a></li>
 <li><a href="#reference">Reference</a></li>
 </ul>
