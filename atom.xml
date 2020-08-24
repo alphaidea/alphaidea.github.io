@@ -1,82 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://7kp8m4.coding-pages.com</id>
+    <id>https://alphaidea.github.io</id>
     <title>文詣不文藝</title>
-    <updated>2020-08-24T04:40:45.363Z</updated>
+    <updated>2020-08-24T04:42:15.871Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://7kp8m4.coding-pages.com"/>
-    <link rel="self" href="https://7kp8m4.coding-pages.com/atom.xml"/>
+    <link rel="alternate" href="https://alphaidea.github.io"/>
+    <link rel="self" href="https://alphaidea.github.io/atom.xml"/>
     <subtitle>從來如此，便对吗？</subtitle>
-    <logo>https://7kp8m4.coding-pages.com/images/avatar.png</logo>
-    <icon>https://7kp8m4.coding-pages.com/favicon.ico</icon>
+    <logo>https://alphaidea.github.io/images/avatar.png</logo>
+    <icon>https://alphaidea.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 文詣不文藝</rights>
     <entry>
         <title type="html"><![CDATA[善用佳软]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/shan-yong-jia-ruan/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/shan-yong-jia-ruan/">
+        <id>https://alphaidea.github.io/post/shan-yong-jia-ruan/</id>
+        <link href="https://alphaidea.github.io/post/shan-yong-jia-ruan/">
         </link>
         <updated>2020-07-09T08:10:39.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[poetry 指北]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/poetry-zhi-bei/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/poetry-zhi-bei/">
+        <id>https://alphaidea.github.io/post/poetry-zhi-bei/</id>
+        <link href="https://alphaidea.github.io/post/poetry-zhi-bei/">
         </link>
         <updated>2020-02-03T05:32:10.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[macOS 使用 Oh My Zsh]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/macos-shi-yong-oh-my-zsh/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/macos-shi-yong-oh-my-zsh/">
+        <id>https://alphaidea.github.io/post/macos-shi-yong-oh-my-zsh/</id>
+        <link href="https://alphaidea.github.io/post/macos-shi-yong-oh-my-zsh/">
         </link>
         <updated>2020-01-28T11:42:46.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[macOS 无法安装第三方应用]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/macos-wu-fa-an-zhuang-di-san-fang-ying-yong/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/macos-wu-fa-an-zhuang-di-san-fang-ying-yong/">
+        <id>https://alphaidea.github.io/post/macos-wu-fa-an-zhuang-di-san-fang-ying-yong/</id>
+        <link href="https://alphaidea.github.io/post/macos-wu-fa-an-zhuang-di-san-fang-ying-yong/">
         </link>
         <updated>2020-01-23T11:47:13.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Style]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/style/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/style/">
+        <id>https://alphaidea.github.io/post/style/</id>
+        <link href="https://alphaidea.github.io/post/style/">
         </link>
         <updated>2020-01-20T05:35:56.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[Cheatsheets]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/cheatsheets/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/cheatsheets/">
+        <id>https://alphaidea.github.io/post/cheatsheets/</id>
+        <link href="https://alphaidea.github.io/post/cheatsheets/">
         </link>
         <updated>2020-01-18T02:47:42.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[iOS Setup]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/ios-setup/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/ios-setup/">
+        <id>https://alphaidea.github.io/post/ios-setup/</id>
+        <link href="https://alphaidea.github.io/post/ios-setup/">
         </link>
         <updated>2020-01-16T02:47:59.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[pipenv 指北]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/pipenv-zhi-bei/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/pipenv-zhi-bei/">
+        <id>https://alphaidea.github.io/post/pipenv-zhi-bei/</id>
+        <link href="https://alphaidea.github.io/post/pipenv-zhi-bei/">
         </link>
         <updated>2020-01-06T09:44:05.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[macOS 配置 PHP 开发环境]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/macos-php-setup/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/macos-php-setup/">
+        <id>https://alphaidea.github.io/post/macos-php-setup/</id>
+        <link href="https://alphaidea.github.io/post/macos-php-setup/">
         </link>
         <updated>2020-01-01T05:35:18.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[macOS Dev Setup Guide]]></title>
-        <id>https://7kp8m4.coding-pages.com/post/macos-dev-setup-guide/</id>
-        <link href="https://7kp8m4.coding-pages.com/post/macos-dev-setup-guide/">
+        <id>https://alphaidea.github.io/post/macos-dev-setup-guide/</id>
+        <link href="https://alphaidea.github.io/post/macos-dev-setup-guide/">
         </link>
         <updated>2019-12-30T12:18:37.000Z</updated>
     </entry>
