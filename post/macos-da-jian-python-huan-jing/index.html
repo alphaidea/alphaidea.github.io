@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About | 文詣不文藝</title>
+<title>macOS 搭建 Python 环境 | 文詣不文藝</title>
 <meta name="description" content="從來如此，便对吗？" />
 <link rel="shortcut icon" href="https://alphaidea.github.io/favicon.ico?v=1604030508391">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -92,29 +92,90 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              About
+              macOS 搭建 Python 环境
             </h2>
             <div class="post-info">
               <span>
-                2020-01-10
+                2020-10-30
               </span>
               <span>
                 1 min read
               </span>
               
+                <a href="https://alphaidea.github.io/tag/WUp_xdYlL/" class="post-tag">
+                  # Python
+                </a>
+              
+                <a href="https://alphaidea.github.io/tag/qyw-BMWXW/" class="post-tag">
+                  # macOS
+                </a>
+              
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <h2 id="blog">blog</h2>
-<p>记忆太复杂，时间久了自己都不知道什么是真实的， 所以有了记录的想法</p>
+                <h1 id="macos-搭建-python-环境">macOS 搭建 Python 环境</h1>
+<p>基于 macOS Catalina Version 10.15.7</p>
+<h2 id="使用-brew-安装-python-black-pipenv-pycharm">使用 brew 安装 Python、 black、pipenv、PyCharm</h2>
+<pre><code class="language-shell">brew install python black pipenv
+brew cask install pycharm
+</code></pre>
+<h2 id="pycharm-配置-black-自动代码格式化为-pep8-标准">PyCharm 配置 black 自动代码格式化为 pep8 标准</h2>
+<p><code>PyCharm --&gt; Preferences --&gt; Tools --&gt; File Watchers --&gt; Add --&gt; &lt;custom&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>填充</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Black(可自定义)</td>
+</tr>
+<tr>
+<td>File type</td>
+<td>Python</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>Project Files</td>
+</tr>
+<tr>
+<td>Program</td>
+<td><code>/usr/local/bin/black</code></td>
+</tr>
+<tr>
+<td>Arguments</td>
+<td><code>$FilePath$</code></td>
+</tr>
+<tr>
+<td>Output paths to refresh</td>
+<td><code>$FilePath$</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pycharm-常用插件">PyCharm 常用插件</h2>
+<ol>
+<li>Rainbow Brackets</li>
+<li>Grazie</li>
+<li>statistic</li>
+<li>CodeGlance</li>
+</ol>
+<h2 id="reference">Reference</h2>
+<p><a href="https://github.com/psf/black" title="The uncompromising Python code formatter">black</a><br>
+<a href="https://black.readthedocs.io/en/stable/editor_integration.html#pycharm-intellij-idea" title="Editor integration">Editor integration</a></p>
 
               </div>
               <div class="toc-container">
                 <ul class="markdownIt-TOC">
-<li>
+<li><a href="#macos-%E6%90%AD%E5%BB%BA-python-%E7%8E%AF%E5%A2%83">macOS 搭建 Python 环境</a>
 <ul>
-<li><a href="#blog">blog</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8-brew-%E5%AE%89%E8%A3%85-python-black-pipenv-pycharm">使用 brew 安装 Python、 black、pipenv、PyCharm</a></li>
+<li><a href="#pycharm-%E9%85%8D%E7%BD%AE-black-%E8%87%AA%E5%8A%A8%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%BA-pep8-%E6%A0%87%E5%87%86">PyCharm 配置 black 自动代码格式化为 pep8 标准</a></li>
+<li><a href="#pycharm-%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6">PyCharm 常用插件</a></li>
+<li><a href="#reference">Reference</a></li>
 </ul>
 </li>
 </ul>
@@ -124,6 +185,15 @@
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://alphaidea.github.io/post/macos-da-jian-nodejs-huan-jing/">
+              <h3 class="post-title">
+                macOS 搭建 Node.js 环境
+              </h3>
+            </a>
+          </div>
         
 
         
